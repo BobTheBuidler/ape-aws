@@ -1,9 +1,9 @@
 import boto3
-from typing import Optional, Dict
+from typing import Dict
 
 
 class AwsNode:
-    '''
+    """
     Creates AWS node on a specified blockchain network
     Will run as is, no parameters necessary
     :param
@@ -26,8 +26,7 @@ class AwsNode:
         'peer_logs': bool (default False)
         'StateDB': str
         'Tags': dict
-    '''
-
+    """
     def __init__(
             self,
             chain_code_logs: bool = False,
