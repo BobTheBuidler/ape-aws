@@ -33,14 +33,14 @@ class EthLambda(core.Construct):
             bundling=bundling_config
         )
         lf = aws_lambda.Function(
-            self,
-            "Function",
-            handler="lambda_function.lambda_handler",
-            runtime=aws_lambda.Runtime.PYTHON_3_8,
-            environment=env,
-            timeout=core.Duration.minutes(2),
-            code=code,
-            memory_size=256
+                self,
+                "Function",
+                handler="lambda_function.lambda_handler",
+                runtime=aws_lambda.Runtime.PYTHON_3_8,
+                environment=env,
+                timeout=core.Duration.minutes(2),
+                code=code,
+                memory_size=256
         )
         self.lf = lf
 
