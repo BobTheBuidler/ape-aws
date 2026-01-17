@@ -119,3 +119,4 @@ version.py
 
 # Ape stuff
 .build/
+.worktrees/
