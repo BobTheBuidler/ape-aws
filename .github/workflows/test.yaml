@@ -2,32 +2,20 @@ on:
   push:
     paths:
       - '**/*.py'
-      - '**/*.pyi'
       - 'pyproject.toml'
-      - 'mypy.ini'
       - 'setup.cfg'
       - 'setup.py'
-      - 'requirements*.txt'
-      - 'tox.ini'
-      - 'poetry.lock'
       - '.pre-commit-config.yaml'
       - 'tests/**'
-      - 'pytest.ini'
       - '.github/workflows/test.yaml'
   pull_request:
     paths:
       - '**/*.py'
-      - '**/*.pyi'
       - 'pyproject.toml'
-      - 'mypy.ini'
       - 'setup.cfg'
       - 'setup.py'
-      - 'requirements*.txt'
-      - 'tox.ini'
-      - 'poetry.lock'
       - '.pre-commit-config.yaml'
       - 'tests/**'
-      - 'pytest.ini'
       - '.github/workflows/test.yaml'
 
 name: Test
