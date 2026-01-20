@@ -1,4 +1,22 @@
-on: ["push", "pull_request"]
+on:
+  push:
+    paths:
+      - '**/*.py'
+      - 'pyproject.toml'
+      - 'setup.cfg'
+      - 'setup.py'
+      - '.pre-commit-config.yaml'
+      - 'tests/**'
+      - '.github/workflows/test.yaml'
+  pull_request:
+    paths:
+      - '**/*.py'
+      - 'pyproject.toml'
+      - 'setup.cfg'
+      - 'setup.py'
+      - '.pre-commit-config.yaml'
+      - 'tests/**'
+      - '.github/workflows/test.yaml'
 
 name: Test
 
